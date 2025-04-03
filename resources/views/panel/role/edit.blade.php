@@ -1,0 +1,94 @@
+@extends('panel.layouts.app')
+
+@section('content')
+
+
+    <div class="pagetitle">
+        <h1>Edit Role</h1>
+
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard" style="height:100%" ;>
+
+
+            <div class="row">
+              <div class="col-lg-9">
+
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Edit Role</h5>
+
+
+                    <form action="" method="post">
+                        {{csrf_field()}}
+                      <div class="row mb-3">
+                        <label for="inputText" class="col-sm-12 col-form-label">Name</label>
+                        <div class="col-sm-12">
+                            <input type="text" name="name" value="{{ $getRecord ? $getRecord->name : '' }}" class="form-control">
+
+
+                        </div>
+                      </div>
+
+
+
+
+                      <div class="row mb-3">
+                        <label style="display: block; margin-bottom: 20px;" for="inputText" class="col-sm-12 col-form-label"><b>Permission</b></label>
+
+                        @foreach ($getPermission as $value)
+                            <div class="row" style="margin-bottom: 20px;">
+                                <div class="col-md-3">
+                                    {{$value['name']}}
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="d-flex flex-wrap">
+                                        @foreach ($value['group'] as $group)
+                                            @php
+                                                // Vérifier si la permission est déjà attribuée au rôle
+                                                $checked = '';
+                                                foreach ($getRolePermission as $role) {
+                                                    if ($role->permission_id == $group['id']) {
+                                                        $checked = 'checked';
+                                                        break;
+                                                    }
+                                                }
+                                            @endphp
+                                            <div class="mr-3 mb-3" style="margin-right: 15px;">
+                                                <label>
+                                                    <input type="checkbox" {{ $checked }} value="{{ $group['id'] }}" name="permission_id[]">
+                                                    {{$group['name']}}
+                                                </label>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        @endforeach
+                    </div>
+
+
+
+                    <div class="row mb-3">
+                        <div class="col-sm-12">
+                          <button type="submit" class="btn btn-primary">Update</button>
+                        </div>
+                      </div>
+
+                    </form><!-- End General Form Elements -->
+
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+
+
+
+    </section>
+
+    <!-- End #main -->
+@endsection

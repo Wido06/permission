@@ -34,14 +34,14 @@ Route::group(['middleware' => 'useradmin'], function()
   Route::post('/panel/role/store', [RoleController::class, 'store'])->name('panel.role.store');
 
 
-  
+
   Route::get('panel/user', [UserController::class, 'list']);
   Route::get('panel/user/add', [UserController::class, 'add']);
   Route::post('panel/user/add/', [UserController::class, 'insert']);
   Route::get('panel/user/edit/{id}', [UserController::class, 'edit']);
   Route::post('panel/user/edit/{id}', [UserController::class, 'update']);
   Route::get('panel/user/delete/{id}', [UserController::class, 'delete']);
-
+  
 
   Route::get('panel/category', [CategoryController::class, 'list']);
   Route::get('panel/category/add', [CategoryController::class, 'add']);

@@ -91,7 +91,7 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
                                     </div>
 
-                                    <form action="{{ url('panel.role.store') }}" method="post" id="addRoleForm">
+                                    {{-- <form action="{{ url('panel.role.store') }}" method="post" id="addRole">
                                         @csrf
                                         <div class="modal-body">
                                             <div class="mb-3">
@@ -125,7 +125,8 @@
                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
                                             <button type="submit" class="btn btn-primary">Enregistrer</button>
                                         </div>
-                                    </form>
+                                    </form> --}}
+
                                 </div>
                             </div>
                         </div>

@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rules\Password;
 
+
 class UserController extends Controller
 {
 
@@ -134,4 +135,6 @@ class UserController extends Controller
 
         return redirect('panel/user')->with('toast_message', "Utilisateur supprimé avec succès.");
     }
+
+
 }

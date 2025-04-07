@@ -34,7 +34,7 @@ class SelectCountryCity extends Component
             $this->cities = $country->cities()->pluck('name')->toArray();
 
             if (!$this->city && !empty($this->cities)) {
-                $this->city = $this->cities[0];
+                $this->city = $this->cities();
             }
         } else {
             $this->cities = [];

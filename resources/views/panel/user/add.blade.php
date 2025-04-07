@@ -42,8 +42,8 @@
 
 
 
-{{--
-                                @livewire(name: 'select-country-city') --}}
+
+                                @livewire(name: 'select-country-city')
 
 
 
@@ -77,7 +77,7 @@
 
 
                             <!-- Bouton pour ouvrir la modale -->
-                            {{-- <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#addRoleModal">
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#addRoleModal">
                                 Ajouter un rôle
                             </button>
 
@@ -128,7 +128,7 @@
                                     </form>
                                 </div>
                             </div>
-                        </div> --}}
+                        </div>
                                 {{-- script pouur le modal --}}
 
 

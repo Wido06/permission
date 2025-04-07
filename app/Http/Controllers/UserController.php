@@ -41,9 +41,9 @@ class UserController extends Controller
                 Password::min(12)->letters()->mixedCase()->numbers()->symbols()->uncompromised(),
             ],
             'role_id' => 'required|integer',
-            // 'country_id' => 'required|integer|exists:countries,id',
-            // 'city_id' => 'required|integer|exists:cities,id',
-            'sexe' => 'required|string|in:homme,femme',
+            'country_id' => 'required|integer|exists:countries,id',
+             'city_id' => 'required|integer|exists:cities,id',
+            'sexe' => 'required|string|in:Féminin,Masculin',
             'file' => 'nullable|mimes:png,jpg,jpeg,pdf|max:2048'
         ]);
 
@@ -85,16 +85,16 @@ class UserController extends Controller
             'name' => 'required|string|max:255',
             'password' => 'nullable|min:12',
             'role_id' => 'required|integer',
-            // 'country_id' => 'required|integer|exists:countries,id',
-            // 'city_id' => 'required|integer|exists:cities,id',
-            'sexe' => 'required|string|in:homme,femme',
+             'country_id' => 'required|integer|exists:countries,id',
+             'city_id' => 'required|integer|exists:cities,id',
+           'sexe' => 'required|string|in:Féminin,Masculin',
             'file' => 'nullable|mimes:png,jpg,jpeg,pdf|max:2048'
         ]);
 
         $user->name = trim($request->name);
         $user->role_id = trim($request->role_id);
-        // $user->country_id = trim($request->country_id);
-        // $user->city_id = trim($request->city_id);
+        $user->country_id = trim($request->country_id);
+        $user->city_id = trim($request->city_id);
         $user->sexe = $request->sexe;
 
         // ✅ Si un nouveau mot de passe est fourni, on le met à jour

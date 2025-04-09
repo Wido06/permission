@@ -15,12 +15,12 @@ class CountriesTableSeeder extends Seeder
      */
     public function run()
     {
-        
 
-        \DB::table('countries')->delete();
-        
-        \DB::table('countries')->insert(array (
-            0 => 
+        DB::table('countries')->delete();
+        // DB::table('countries')->delete();
+
+        DB::table('countries')->insert(array (
+            0 =>
             array (
                 'id' => 1,
                 'name' => 'Afghanistan',
@@ -45,7 +45,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q889',
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 2,
                 'name' => 'Aland Islands',
@@ -70,7 +70,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => NULL,
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 3,
                 'name' => 'Albania',
@@ -95,7 +95,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q222',
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 4,
                 'name' => 'Algeria',
@@ -120,7 +120,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q262',
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 5,
                 'name' => 'American Samoa',
@@ -145,7 +145,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => NULL,
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 6,
                 'name' => 'Andorra',
@@ -170,7 +170,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q228',
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 7,
                 'name' => 'Angola',
@@ -195,7 +195,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q916',
             ),
-            7 => 
+            7 =>
             array (
                 'id' => 8,
                 'name' => 'Anguilla',
@@ -220,7 +220,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => NULL,
             ),
-            8 => 
+            8 =>
             array (
                 'id' => 9,
                 'name' => 'Antarctica',
@@ -245,7 +245,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => NULL,
             ),
-            9 => 
+            9 =>
             array (
                 'id' => 10,
                 'name' => 'Antigua And Barbuda',
@@ -270,7 +270,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q781',
             ),
-            10 => 
+            10 =>
             array (
                 'id' => 11,
                 'name' => 'Argentina',
@@ -295,7 +295,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q414',
             ),
-            11 => 
+            11 =>
             array (
                 'id' => 12,
                 'name' => 'Armenia',
@@ -320,7 +320,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q399',
             ),
-            12 => 
+            12 =>
             array (
                 'id' => 13,
                 'name' => 'Aruba',
@@ -345,7 +345,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => NULL,
             ),
-            13 => 
+            13 =>
             array (
                 'id' => 14,
                 'name' => 'Australia',
@@ -370,7 +370,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q408',
             ),
-            14 => 
+            14 =>
             array (
                 'id' => 15,
                 'name' => 'Austria',
@@ -395,7 +395,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q40',
             ),
-            15 => 
+            15 =>
             array (
                 'id' => 16,
                 'name' => 'Azerbaijan',
@@ -420,7 +420,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q227',
             ),
-            16 => 
+            16 =>
             array (
                 'id' => 17,
                 'name' => 'Bahamas The',
@@ -445,7 +445,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q778',
             ),
-            17 => 
+            17 =>
             array (
                 'id' => 18,
                 'name' => 'Bahrain',
@@ -470,7 +470,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q398',
             ),
-            18 => 
+            18 =>
             array (
                 'id' => 19,
                 'name' => 'Bangladesh',
@@ -495,7 +495,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q902',
             ),
-            19 => 
+            19 =>
             array (
                 'id' => 20,
                 'name' => 'Barbados',
@@ -520,7 +520,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q244',
             ),
-            20 => 
+            20 =>
             array (
                 'id' => 21,
                 'name' => 'Belarus',
@@ -545,7 +545,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q184',
             ),
-            21 => 
+            21 =>
             array (
                 'id' => 22,
                 'name' => 'Belgium',
@@ -570,7 +570,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q31',
             ),
-            22 => 
+            22 =>
             array (
                 'id' => 23,
                 'name' => 'Belize',
@@ -595,7 +595,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q242',
             ),
-            23 => 
+            23 =>
             array (
                 'id' => 24,
                 'name' => 'Benin',
@@ -620,7 +620,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q962',
             ),
-            24 => 
+            24 =>
             array (
                 'id' => 25,
                 'name' => 'Bermuda',
@@ -645,7 +645,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => NULL,
             ),
-            25 => 
+            25 =>
             array (
                 'id' => 26,
                 'name' => 'Bhutan',
@@ -670,7 +670,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q917',
             ),
-            26 => 
+            26 =>
             array (
                 'id' => 27,
                 'name' => 'Bolivia',
@@ -695,7 +695,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q750',
             ),
-            27 => 
+            27 =>
             array (
                 'id' => 28,
                 'name' => 'Bosnia and Herzegovina',
@@ -720,7 +720,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q225',
             ),
-            28 => 
+            28 =>
             array (
                 'id' => 29,
                 'name' => 'Botswana',
@@ -745,7 +745,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q963',
             ),
-            29 => 
+            29 =>
             array (
                 'id' => 30,
                 'name' => 'Bouvet Island',
@@ -770,7 +770,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => NULL,
             ),
-            30 => 
+            30 =>
             array (
                 'id' => 31,
                 'name' => 'Brazil',
@@ -795,7 +795,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q155',
             ),
-            31 => 
+            31 =>
             array (
                 'id' => 32,
                 'name' => 'British Indian Ocean Territory',
@@ -820,7 +820,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => NULL,
             ),
-            32 => 
+            32 =>
             array (
                 'id' => 33,
                 'name' => 'Brunei',
@@ -845,7 +845,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q921',
             ),
-            33 => 
+            33 =>
             array (
                 'id' => 34,
                 'name' => 'Bulgaria',
@@ -870,7 +870,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q219',
             ),
-            34 => 
+            34 =>
             array (
                 'id' => 35,
                 'name' => 'Burkina Faso',
@@ -895,7 +895,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q965',
             ),
-            35 => 
+            35 =>
             array (
                 'id' => 36,
                 'name' => 'Burundi',
@@ -920,7 +920,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q967',
             ),
-            36 => 
+            36 =>
             array (
                 'id' => 37,
                 'name' => 'Cambodia',
@@ -945,7 +945,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q424',
             ),
-            37 => 
+            37 =>
             array (
                 'id' => 38,
                 'name' => 'Cameroon',
@@ -970,7 +970,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q1009',
             ),
-            38 => 
+            38 =>
             array (
                 'id' => 39,
                 'name' => 'Canada',
@@ -995,7 +995,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q16',
             ),
-            39 => 
+            39 =>
             array (
                 'id' => 40,
                 'name' => 'Cape Verde',
@@ -1020,7 +1020,7 @@ class CountriesTableSeeder extends Seeder
                 'flag' => 1,
                 'wikiDataId' => 'Q1011',
             ),
-            40 => 
+            40 =>
             array (
                 'id' => 41,
                 'name' => 'Cayman Islands',
@@ -1045,7 +1045,7 @@ class CountriesTableSeeder extends Seeder
                     'flag' => 1,
                     'wikiDataId' => NULL,
                 ),
-                41 => 
+                41 =>
                 array (
                     'id' => 42,
                     'name' => 'Central African Republic',
@@ -1070,7 +1070,7 @@ class CountriesTableSeeder extends Seeder
                     'flag' => 1,
                     'wikiDataId' => 'Q929',
                 ),
-                42 => 
+                42 =>
                 array (
                     'id' => 43,
                     'name' => 'Chad',
@@ -1095,7 +1095,7 @@ class CountriesTableSeeder extends Seeder
                     'flag' => 1,
                     'wikiDataId' => 'Q657',
                 ),
-                43 => 
+                43 =>
                 array (
                     'id' => 44,
                     'name' => 'Chile',
@@ -1120,7 +1120,7 @@ class CountriesTableSeeder extends Seeder
                     'flag' => 1,
                     'wikiDataId' => 'Q298',
                 ),
-                44 => 
+                44 =>
                 array (
                     'id' => 45,
                     'name' => 'China',
@@ -1145,7 +1145,7 @@ class CountriesTableSeeder extends Seeder
                     'flag' => 1,
                     'wikiDataId' => 'Q148',
                 ),
-                45 => 
+                45 =>
                 array (
                     'id' => 46,
                     'name' => 'Christmas Island',
@@ -1170,7 +1170,7 @@ class CountriesTableSeeder extends Seeder
                     'flag' => 1,
                     'wikiDataId' => NULL,
                 ),
-                46 => 
+                46 =>
                 array (
                     'id' => 47,
                 'name' => 'Cocos (Keeling) Islands',
@@ -1195,7 +1195,7 @@ class CountriesTableSeeder extends Seeder
                     'flag' => 1,
                     'wikiDataId' => NULL,
                 ),
-                47 => 
+                47 =>
                 array (
                     'id' => 48,
                     'name' => 'Colombia',
@@ -1220,7 +1220,7 @@ class CountriesTableSeeder extends Seeder
                     'flag' => 1,
                     'wikiDataId' => 'Q739',
                 ),
-                48 => 
+                48 =>
                 array (
                     'id' => 49,
                     'name' => 'Comoros',
@@ -1245,7 +1245,7 @@ class CountriesTableSeeder extends Seeder
                     'flag' => 1,
                     'wikiDataId' => 'Q970',
                 ),
-                49 => 
+                49 =>
                 array (
                     'id' => 50,
                     'name' => 'Congo',
@@ -1270,7 +1270,7 @@ class CountriesTableSeeder extends Seeder
                     'flag' => 1,
                     'wikiDataId' => 'Q971',
                 ),
-                50 => 
+                50 =>
                 array (
                     'id' => 51,
                     'name' => 'Congo The Democratic Republic Of The',
@@ -1295,7 +1295,7 @@ class CountriesTableSeeder extends Seeder
                     'flag' => 1,
                     'wikiDataId' => 'Q974',
                 ),
-                51 => 
+                51 =>
                 array (
                     'id' => 52,
                     'name' => 'Cook Islands',
@@ -1320,7 +1320,7 @@ class CountriesTableSeeder extends Seeder
                     'flag' => 1,
                     'wikiDataId' => 'Q26988',
                 ),
-                52 => 
+                52 =>
                 array (
                     'id' => 53,
                     'name' => 'Costa Rica',
@@ -1345,7 +1345,7 @@ class CountriesTableSeeder extends Seeder
                         'flag' => 1,
                         'wikiDataId' => 'Q800',
                     ),
-                    53 => 
+                    53 =>
                     array (
                         'id' => 54,
                     'name' => 'Cote D\'Ivoire (Ivory Coast)',
@@ -1370,7 +1370,7 @@ class CountriesTableSeeder extends Seeder
                         'flag' => 1,
                         'wikiDataId' => 'Q1008',
                     ),
-                    54 => 
+                    54 =>
                     array (
                         'id' => 55,
                     'name' => 'Croatia (Hrvatska)',
@@ -1395,7 +1395,7 @@ class CountriesTableSeeder extends Seeder
                         'flag' => 1,
                         'wikiDataId' => 'Q224',
                     ),
-                    55 => 
+                    55 =>
                     array (
                         'id' => 56,
                         'name' => 'Cuba',
@@ -1420,7 +1420,7 @@ class CountriesTableSeeder extends Seeder
                         'flag' => 1,
                         'wikiDataId' => 'Q241',
                     ),
-                    56 => 
+                    56 =>
                     array (
                         'id' => 57,
                         'name' => 'Cyprus',
@@ -1445,7 +1445,7 @@ class CountriesTableSeeder extends Seeder
                         'flag' => 1,
                         'wikiDataId' => 'Q229',
                     ),
-                    57 => 
+                    57 =>
                     array (
                         'id' => 58,
                         'name' => 'Czech Republic',
@@ -1470,7 +1470,7 @@ class CountriesTableSeeder extends Seeder
                         'flag' => 1,
                         'wikiDataId' => 'Q213',
                     ),
-                    58 => 
+                    58 =>
                     array (
                         'id' => 59,
                         'name' => 'Denmark',
@@ -1495,7 +1495,7 @@ class CountriesTableSeeder extends Seeder
                         'flag' => 1,
                         'wikiDataId' => 'Q35',
                     ),
-                    59 => 
+                    59 =>
                     array (
                         'id' => 60,
                         'name' => 'Djibouti',
@@ -1520,7 +1520,7 @@ class CountriesTableSeeder extends Seeder
                         'flag' => 1,
                         'wikiDataId' => 'Q977',
                     ),
-                    60 => 
+                    60 =>
                     array (
                         'id' => 61,
                         'name' => 'Dominica',
@@ -1545,7 +1545,7 @@ class CountriesTableSeeder extends Seeder
                         'flag' => 1,
                         'wikiDataId' => 'Q784',
                     ),
-                    61 => 
+                    61 =>
                     array (
                         'id' => 62,
                         'name' => 'Dominican Republic',
@@ -1570,7 +1570,7 @@ class CountriesTableSeeder extends Seeder
                         'flag' => 1,
                         'wikiDataId' => 'Q786',
                     ),
-                    62 => 
+                    62 =>
                     array (
                         'id' => 63,
                         'name' => 'East Timor',
@@ -1595,7 +1595,7 @@ class CountriesTableSeeder extends Seeder
                         'flag' => 1,
                         'wikiDataId' => 'Q574',
                     ),
-                    63 => 
+                    63 =>
                     array (
                         'id' => 64,
                         'name' => 'Ecuador',
@@ -1620,7 +1620,7 @@ class CountriesTableSeeder extends Seeder
                         'flag' => 1,
                         'wikiDataId' => 'Q736',
                     ),
-                    64 => 
+                    64 =>
                     array (
                         'id' => 65,
                         'name' => 'Egypt',
@@ -1645,7 +1645,7 @@ class CountriesTableSeeder extends Seeder
                         'flag' => 1,
                         'wikiDataId' => 'Q79',
                     ),
-                    65 => 
+                    65 =>
                     array (
                         'id' => 66,
                         'name' => 'El Salvador',
@@ -1670,7 +1670,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => 'Q792',
                         ),
-                        66 => 
+                        66 =>
                         array (
                             'id' => 67,
                             'name' => 'Equatorial Guinea',
@@ -1695,7 +1695,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => 'Q983',
                         ),
-                        67 => 
+                        67 =>
                         array (
                             'id' => 68,
                             'name' => 'Eritrea',
@@ -1720,7 +1720,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => 'Q986',
                         ),
-                        68 => 
+                        68 =>
                         array (
                             'id' => 69,
                             'name' => 'Estonia',
@@ -1745,7 +1745,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => 'Q191',
                         ),
-                        69 => 
+                        69 =>
                         array (
                             'id' => 70,
                             'name' => 'Ethiopia',
@@ -1770,7 +1770,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => 'Q115',
                         ),
-                        70 => 
+                        70 =>
                         array (
                             'id' => 71,
                             'name' => 'Falkland Islands',
@@ -1795,7 +1795,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => NULL,
                         ),
-                        71 => 
+                        71 =>
                         array (
                             'id' => 72,
                             'name' => 'Faroe Islands',
@@ -1820,7 +1820,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => NULL,
                         ),
-                        72 => 
+                        72 =>
                         array (
                             'id' => 73,
                             'name' => 'Fiji Islands',
@@ -1845,7 +1845,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => 'Q712',
                         ),
-                        73 => 
+                        73 =>
                         array (
                             'id' => 74,
                             'name' => 'Finland',
@@ -1870,7 +1870,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => 'Q33',
                         ),
-                        74 => 
+                        74 =>
                         array (
                             'id' => 75,
                             'name' => 'France',
@@ -1895,7 +1895,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => 'Q142',
                         ),
-                        75 => 
+                        75 =>
                         array (
                             'id' => 76,
                             'name' => 'French Guiana',
@@ -1920,7 +1920,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => NULL,
                         ),
-                        76 => 
+                        76 =>
                         array (
                             'id' => 77,
                             'name' => 'French Polynesia',
@@ -1945,7 +1945,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => NULL,
                         ),
-                        77 => 
+                        77 =>
                         array (
                             'id' => 78,
                             'name' => 'French Southern Territories',
@@ -1970,7 +1970,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => NULL,
                         ),
-                        78 => 
+                        78 =>
                         array (
                             'id' => 79,
                             'name' => 'Gabon',
@@ -1995,7 +1995,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => 'Q1000',
                         ),
-                        79 => 
+                        79 =>
                         array (
                             'id' => 80,
                             'name' => 'Gambia The',
@@ -2020,7 +2020,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => 'Q1005',
                         ),
-                        80 => 
+                        80 =>
                         array (
                             'id' => 81,
                             'name' => 'Georgia',
@@ -2045,7 +2045,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => 'Q230',
                         ),
-                        81 => 
+                        81 =>
                         array (
                             'id' => 82,
                             'name' => 'Germany',
@@ -2070,7 +2070,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => 'Q183',
                         ),
-                        82 => 
+                        82 =>
                         array (
                             'id' => 83,
                             'name' => 'Ghana',
@@ -2095,7 +2095,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => 'Q117',
                         ),
-                        83 => 
+                        83 =>
                         array (
                             'id' => 84,
                             'name' => 'Gibraltar',
@@ -2120,7 +2120,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => NULL,
                         ),
-                        84 => 
+                        84 =>
                         array (
                             'id' => 85,
                             'name' => 'Greece',
@@ -2145,7 +2145,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => 'Q41',
                         ),
-                        85 => 
+                        85 =>
                         array (
                             'id' => 86,
                             'name' => 'Greenland',
@@ -2170,7 +2170,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => NULL,
                         ),
-                        86 => 
+                        86 =>
                         array (
                             'id' => 87,
                             'name' => 'Grenada',
@@ -2195,7 +2195,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => 'Q769',
                         ),
-                        87 => 
+                        87 =>
                         array (
                             'id' => 88,
                             'name' => 'Guadeloupe',
@@ -2220,7 +2220,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => NULL,
                         ),
-                        88 => 
+                        88 =>
                         array (
                             'id' => 89,
                             'name' => 'Guam',
@@ -2245,7 +2245,7 @@ class CountriesTableSeeder extends Seeder
                             'flag' => 1,
                             'wikiDataId' => NULL,
                         ),
-                        89 => 
+                        89 =>
                         array (
                             'id' => 90,
                             'name' => 'Guatemala',
@@ -2270,7 +2270,7 @@ class CountriesTableSeeder extends Seeder
                                 'flag' => 1,
                                 'wikiDataId' => 'Q774',
                             ),
-                            90 => 
+                            90 =>
                             array (
                                 'id' => 91,
                                 'name' => 'Guernsey and Alderney',
@@ -2295,7 +2295,7 @@ class CountriesTableSeeder extends Seeder
                                 'flag' => 1,
                                 'wikiDataId' => NULL,
                             ),
-                            91 => 
+                            91 =>
                             array (
                                 'id' => 92,
                                 'name' => 'Guinea',
@@ -2320,7 +2320,7 @@ class CountriesTableSeeder extends Seeder
                                 'flag' => 1,
                                 'wikiDataId' => 'Q1006',
                             ),
-                            92 => 
+                            92 =>
                             array (
                                 'id' => 93,
                                 'name' => 'Guinea-Bissau',
@@ -2345,7 +2345,7 @@ class CountriesTableSeeder extends Seeder
                                 'flag' => 1,
                                 'wikiDataId' => 'Q1007',
                             ),
-                            93 => 
+                            93 =>
                             array (
                                 'id' => 94,
                                 'name' => 'Guyana',
@@ -2370,7 +2370,7 @@ class CountriesTableSeeder extends Seeder
                                 'flag' => 1,
                                 'wikiDataId' => 'Q734',
                             ),
-                            94 => 
+                            94 =>
                             array (
                                 'id' => 95,
                                 'name' => 'Haiti',
@@ -2395,7 +2395,7 @@ class CountriesTableSeeder extends Seeder
                                     'flag' => 1,
                                     'wikiDataId' => 'Q790',
                                 ),
-                                95 => 
+                                95 =>
                                 array (
                                     'id' => 96,
                                     'name' => 'Heard Island and McDonald Islands',
@@ -2420,7 +2420,7 @@ class CountriesTableSeeder extends Seeder
                                     'flag' => 1,
                                     'wikiDataId' => NULL,
                                 ),
-                                96 => 
+                                96 =>
                                 array (
                                     'id' => 97,
                                     'name' => 'Honduras',
@@ -2445,7 +2445,7 @@ class CountriesTableSeeder extends Seeder
                                         'flag' => 1,
                                         'wikiDataId' => 'Q783',
                                     ),
-                                    97 => 
+                                    97 =>
                                     array (
                                         'id' => 98,
                                         'name' => 'Hong Kong S.A.R.',
@@ -2470,7 +2470,7 @@ class CountriesTableSeeder extends Seeder
                                         'flag' => 1,
                                         'wikiDataId' => NULL,
                                     ),
-                                    98 => 
+                                    98 =>
                                     array (
                                         'id' => 99,
                                         'name' => 'Hungary',
@@ -2495,7 +2495,7 @@ class CountriesTableSeeder extends Seeder
                                         'flag' => 1,
                                         'wikiDataId' => 'Q28',
                                     ),
-                                    99 => 
+                                    99 =>
                                     array (
                                         'id' => 100,
                                         'name' => 'Iceland',
@@ -2520,7 +2520,7 @@ class CountriesTableSeeder extends Seeder
                                         'flag' => 1,
                                         'wikiDataId' => 'Q189',
                                     ),
-                                    100 => 
+                                    100 =>
                                     array (
                                         'id' => 101,
                                         'name' => 'India',
@@ -2545,7 +2545,7 @@ class CountriesTableSeeder extends Seeder
                                         'flag' => 1,
                                         'wikiDataId' => 'Q668',
                                     ),
-                                    101 => 
+                                    101 =>
                                     array (
                                         'id' => 102,
                                         'name' => 'Indonesia',
@@ -2570,7 +2570,7 @@ class CountriesTableSeeder extends Seeder
                                         'flag' => 1,
                                         'wikiDataId' => 'Q252',
                                     ),
-                                    102 => 
+                                    102 =>
                                     array (
                                         'id' => 103,
                                         'name' => 'Iran',
@@ -2595,7 +2595,7 @@ class CountriesTableSeeder extends Seeder
                                         'flag' => 1,
                                         'wikiDataId' => 'Q794',
                                     ),
-                                    103 => 
+                                    103 =>
                                     array (
                                         'id' => 104,
                                         'name' => 'Iraq',
@@ -2620,7 +2620,7 @@ class CountriesTableSeeder extends Seeder
                                         'flag' => 1,
                                         'wikiDataId' => 'Q796',
                                     ),
-                                    104 => 
+                                    104 =>
                                     array (
                                         'id' => 105,
                                         'name' => 'Ireland',
@@ -2645,7 +2645,7 @@ class CountriesTableSeeder extends Seeder
                                         'flag' => 1,
                                         'wikiDataId' => 'Q27',
                                     ),
-                                    105 => 
+                                    105 =>
                                     array (
                                         'id' => 106,
                                         'name' => 'Israel',
@@ -2670,7 +2670,7 @@ class CountriesTableSeeder extends Seeder
                                         'flag' => 1,
                                         'wikiDataId' => 'Q801',
                                     ),
-                                    106 => 
+                                    106 =>
                                     array (
                                         'id' => 107,
                                         'name' => 'Italy',
@@ -2695,7 +2695,7 @@ class CountriesTableSeeder extends Seeder
                                         'flag' => 1,
                                         'wikiDataId' => 'Q38',
                                     ),
-                                    107 => 
+                                    107 =>
                                     array (
                                         'id' => 108,
                                         'name' => 'Jamaica',
@@ -2720,7 +2720,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q766',
                                         ),
-                                        108 => 
+                                        108 =>
                                         array (
                                             'id' => 109,
                                             'name' => 'Japan',
@@ -2745,7 +2745,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q17',
                                         ),
-                                        109 => 
+                                        109 =>
                                         array (
                                             'id' => 110,
                                             'name' => 'Jersey',
@@ -2770,7 +2770,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q785',
                                         ),
-                                        110 => 
+                                        110 =>
                                         array (
                                             'id' => 111,
                                             'name' => 'Jordan',
@@ -2795,7 +2795,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q810',
                                         ),
-                                        111 => 
+                                        111 =>
                                         array (
                                             'id' => 112,
                                             'name' => 'Kazakhstan',
@@ -2820,7 +2820,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q232',
                                         ),
-                                        112 => 
+                                        112 =>
                                         array (
                                             'id' => 113,
                                             'name' => 'Kenya',
@@ -2845,7 +2845,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q114',
                                         ),
-                                        113 => 
+                                        113 =>
                                         array (
                                             'id' => 114,
                                             'name' => 'Kiribati',
@@ -2870,7 +2870,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q710',
                                         ),
-                                        114 => 
+                                        114 =>
                                         array (
                                             'id' => 115,
                                             'name' => 'Korea North',
@@ -2895,7 +2895,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q423',
                                         ),
-                                        115 => 
+                                        115 =>
                                         array (
                                             'id' => 116,
                                             'name' => 'Korea South',
@@ -2920,7 +2920,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q884',
                                         ),
-                                        116 => 
+                                        116 =>
                                         array (
                                             'id' => 117,
                                             'name' => 'Kuwait',
@@ -2945,7 +2945,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q817',
                                         ),
-                                        117 => 
+                                        117 =>
                                         array (
                                             'id' => 118,
                                             'name' => 'Kyrgyzstan',
@@ -2970,7 +2970,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q813',
                                         ),
-                                        118 => 
+                                        118 =>
                                         array (
                                             'id' => 119,
                                             'name' => 'Laos',
@@ -2995,7 +2995,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q819',
                                         ),
-                                        119 => 
+                                        119 =>
                                         array (
                                             'id' => 120,
                                             'name' => 'Latvia',
@@ -3020,7 +3020,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q211',
                                         ),
-                                        120 => 
+                                        120 =>
                                         array (
                                             'id' => 121,
                                             'name' => 'Lebanon',
@@ -3045,7 +3045,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q822',
                                         ),
-                                        121 => 
+                                        121 =>
                                         array (
                                             'id' => 122,
                                             'name' => 'Lesotho',
@@ -3070,7 +3070,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q1013',
                                         ),
-                                        122 => 
+                                        122 =>
                                         array (
                                             'id' => 123,
                                             'name' => 'Liberia',
@@ -3095,7 +3095,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q1014',
                                         ),
-                                        123 => 
+                                        123 =>
                                         array (
                                             'id' => 124,
                                             'name' => 'Libya',
@@ -3120,7 +3120,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q1016',
                                         ),
-                                        124 => 
+                                        124 =>
                                         array (
                                             'id' => 125,
                                             'name' => 'Liechtenstein',
@@ -3145,7 +3145,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q347',
                                         ),
-                                        125 => 
+                                        125 =>
                                         array (
                                             'id' => 126,
                                             'name' => 'Lithuania',
@@ -3170,7 +3170,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q37',
                                         ),
-                                        126 => 
+                                        126 =>
                                         array (
                                             'id' => 127,
                                             'name' => 'Luxembourg',
@@ -3195,7 +3195,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q32',
                                         ),
-                                        127 => 
+                                        127 =>
                                         array (
                                             'id' => 128,
                                             'name' => 'Macau S.A.R.',
@@ -3220,7 +3220,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => NULL,
                                         ),
-                                        128 => 
+                                        128 =>
                                         array (
                                             'id' => 129,
                                             'name' => 'Macedonia',
@@ -3245,7 +3245,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q221',
                                         ),
-                                        129 => 
+                                        129 =>
                                         array (
                                             'id' => 130,
                                             'name' => 'Madagascar',
@@ -3270,7 +3270,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q1019',
                                         ),
-                                        130 => 
+                                        130 =>
                                         array (
                                             'id' => 131,
                                             'name' => 'Malawi',
@@ -3295,7 +3295,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q1020',
                                         ),
-                                        131 => 
+                                        131 =>
                                         array (
                                             'id' => 132,
                                             'name' => 'Malaysia',
@@ -3320,7 +3320,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q833',
                                         ),
-                                        132 => 
+                                        132 =>
                                         array (
                                             'id' => 133,
                                             'name' => 'Maldives',
@@ -3345,7 +3345,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q826',
                                         ),
-                                        133 => 
+                                        133 =>
                                         array (
                                             'id' => 134,
                                             'name' => 'Mali',
@@ -3370,7 +3370,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q912',
                                         ),
-                                        134 => 
+                                        134 =>
                                         array (
                                             'id' => 135,
                                             'name' => 'Malta',
@@ -3395,7 +3395,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q233',
                                         ),
-                                        135 => 
+                                        135 =>
                                         array (
                                             'id' => 136,
                                         'name' => 'Man (Isle of)',
@@ -3420,7 +3420,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => NULL,
                                         ),
-                                        136 => 
+                                        136 =>
                                         array (
                                             'id' => 137,
                                             'name' => 'Marshall Islands',
@@ -3445,7 +3445,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q709',
                                         ),
-                                        137 => 
+                                        137 =>
                                         array (
                                             'id' => 138,
                                             'name' => 'Martinique',
@@ -3470,7 +3470,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => NULL,
                                         ),
-                                        138 => 
+                                        138 =>
                                         array (
                                             'id' => 139,
                                             'name' => 'Mauritania',
@@ -3495,7 +3495,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q1025',
                                         ),
-                                        139 => 
+                                        139 =>
                                         array (
                                             'id' => 140,
                                             'name' => 'Mauritius',
@@ -3520,7 +3520,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => 'Q1027',
                                         ),
-                                        140 => 
+                                        140 =>
                                         array (
                                             'id' => 141,
                                             'name' => 'Mayotte',
@@ -3545,7 +3545,7 @@ class CountriesTableSeeder extends Seeder
                                             'flag' => 1,
                                             'wikiDataId' => NULL,
                                         ),
-                                        141 => 
+                                        141 =>
                                         array (
                                             'id' => 142,
                                             'name' => 'Mexico',
@@ -3570,7 +3570,7 @@ class CountriesTableSeeder extends Seeder
                                                 'flag' => 1,
                                                 'wikiDataId' => 'Q96',
                                             ),
-                                            142 => 
+                                            142 =>
                                             array (
                                                 'id' => 143,
                                                 'name' => 'Micronesia',
@@ -3595,7 +3595,7 @@ class CountriesTableSeeder extends Seeder
                                                 'flag' => 1,
                                                 'wikiDataId' => 'Q702',
                                             ),
-                                            143 => 
+                                            143 =>
                                             array (
                                                 'id' => 144,
                                                 'name' => 'Moldova',
@@ -3620,7 +3620,7 @@ class CountriesTableSeeder extends Seeder
                                                 'flag' => 1,
                                                 'wikiDataId' => 'Q217',
                                             ),
-                                            144 => 
+                                            144 =>
                                             array (
                                                 'id' => 145,
                                                 'name' => 'Monaco',
@@ -3645,7 +3645,7 @@ class CountriesTableSeeder extends Seeder
                                                 'flag' => 1,
                                                 'wikiDataId' => NULL,
                                             ),
-                                            145 => 
+                                            145 =>
                                             array (
                                                 'id' => 146,
                                                 'name' => 'Mongolia',
@@ -3670,7 +3670,7 @@ class CountriesTableSeeder extends Seeder
                                                 'flag' => 1,
                                                 'wikiDataId' => 'Q711',
                                             ),
-                                            146 => 
+                                            146 =>
                                             array (
                                                 'id' => 147,
                                                 'name' => 'Montenegro',
@@ -3695,7 +3695,7 @@ class CountriesTableSeeder extends Seeder
                                                 'flag' => 1,
                                                 'wikiDataId' => 'Q236',
                                             ),
-                                            147 => 
+                                            147 =>
                                             array (
                                                 'id' => 148,
                                                 'name' => 'Montserrat',
@@ -3720,7 +3720,7 @@ class CountriesTableSeeder extends Seeder
                                                 'flag' => 1,
                                                 'wikiDataId' => NULL,
                                             ),
-                                            148 => 
+                                            148 =>
                                             array (
                                                 'id' => 149,
                                                 'name' => 'Morocco',
@@ -3745,7 +3745,7 @@ class CountriesTableSeeder extends Seeder
                                                 'flag' => 1,
                                                 'wikiDataId' => 'Q1028',
                                             ),
-                                            149 => 
+                                            149 =>
                                             array (
                                                 'id' => 150,
                                                 'name' => 'Mozambique',
@@ -3770,7 +3770,7 @@ class CountriesTableSeeder extends Seeder
                                                 'flag' => 1,
                                                 'wikiDataId' => 'Q1029',
                                             ),
-                                            150 => 
+                                            150 =>
                                             array (
                                                 'id' => 151,
                                                 'name' => 'Myanmar',
@@ -3795,7 +3795,7 @@ class CountriesTableSeeder extends Seeder
                                                 'flag' => 1,
                                                 'wikiDataId' => 'Q836',
                                             ),
-                                            151 => 
+                                            151 =>
                                             array (
                                                 'id' => 152,
                                                 'name' => 'Namibia',
@@ -3820,7 +3820,7 @@ class CountriesTableSeeder extends Seeder
                                                 'flag' => 1,
                                                 'wikiDataId' => 'Q1030',
                                             ),
-                                            152 => 
+                                            152 =>
                                             array (
                                                 'id' => 153,
                                                 'name' => 'Nauru',
@@ -3845,7 +3845,7 @@ class CountriesTableSeeder extends Seeder
                                                 'flag' => 1,
                                                 'wikiDataId' => 'Q697',
                                             ),
-                                            153 => 
+                                            153 =>
                                             array (
                                                 'id' => 154,
                                                 'name' => 'Nepal',
@@ -3870,7 +3870,7 @@ class CountriesTableSeeder extends Seeder
                                                 'flag' => 1,
                                                 'wikiDataId' => 'Q837',
                                             ),
-                                            154 => 
+                                            154 =>
                                             array (
                                                 'id' => 155,
                                                 'name' => 'Bonaire, Sint Eustatius and Saba',
@@ -3895,7 +3895,7 @@ class CountriesTableSeeder extends Seeder
                                                 'flag' => 1,
                                                 'wikiDataId' => 'Q27561',
                                             ),
-                                            155 => 
+                                            155 =>
                                             array (
                                                 'id' => 156,
                                                 'name' => 'Netherlands The',
@@ -3920,7 +3920,7 @@ class CountriesTableSeeder extends Seeder
                                                 'flag' => 1,
                                                 'wikiDataId' => 'Q55',
                                             ),
-                                            156 => 
+                                            156 =>
                                             array (
                                                 'id' => 157,
                                                 'name' => 'New Caledonia',
@@ -3945,7 +3945,7 @@ class CountriesTableSeeder extends Seeder
                                                 'flag' => 1,
                                                 'wikiDataId' => NULL,
                                             ),
-                                            157 => 
+                                            157 =>
                                             array (
                                                 'id' => 158,
                                                 'name' => 'New Zealand',
@@ -3970,7 +3970,7 @@ class CountriesTableSeeder extends Seeder
                                                 'flag' => 1,
                                                 'wikiDataId' => 'Q664',
                                             ),
-                                            158 => 
+                                            158 =>
                                             array (
                                                 'id' => 159,
                                                 'name' => 'Nicaragua',
@@ -3995,7 +3995,7 @@ class CountriesTableSeeder extends Seeder
                                                     'flag' => 1,
                                                     'wikiDataId' => 'Q811',
                                                 ),
-                                                159 => 
+                                                159 =>
                                                 array (
                                                     'id' => 160,
                                                     'name' => 'Niger',
@@ -4020,7 +4020,7 @@ class CountriesTableSeeder extends Seeder
                                                     'flag' => 1,
                                                     'wikiDataId' => 'Q1032',
                                                 ),
-                                                160 => 
+                                                160 =>
                                                 array (
                                                     'id' => 161,
                                                     'name' => 'Nigeria',
@@ -4045,7 +4045,7 @@ class CountriesTableSeeder extends Seeder
                                                     'flag' => 1,
                                                     'wikiDataId' => 'Q1033',
                                                 ),
-                                                161 => 
+                                                161 =>
                                                 array (
                                                     'id' => 162,
                                                     'name' => 'Niue',
@@ -4070,7 +4070,7 @@ class CountriesTableSeeder extends Seeder
                                                     'flag' => 1,
                                                     'wikiDataId' => 'Q34020',
                                                 ),
-                                                162 => 
+                                                162 =>
                                                 array (
                                                     'id' => 163,
                                                     'name' => 'Norfolk Island',
@@ -4095,7 +4095,7 @@ class CountriesTableSeeder extends Seeder
                                                     'flag' => 1,
                                                     'wikiDataId' => NULL,
                                                 ),
-                                                163 => 
+                                                163 =>
                                                 array (
                                                     'id' => 164,
                                                     'name' => 'Northern Mariana Islands',
@@ -4120,7 +4120,7 @@ class CountriesTableSeeder extends Seeder
                                                     'flag' => 1,
                                                     'wikiDataId' => NULL,
                                                 ),
-                                                164 => 
+                                                164 =>
                                                 array (
                                                     'id' => 165,
                                                     'name' => 'Norway',
@@ -4145,7 +4145,7 @@ class CountriesTableSeeder extends Seeder
                                                     'flag' => 1,
                                                     'wikiDataId' => 'Q20',
                                                 ),
-                                                165 => 
+                                                165 =>
                                                 array (
                                                     'id' => 166,
                                                     'name' => 'Oman',
@@ -4170,7 +4170,7 @@ class CountriesTableSeeder extends Seeder
                                                     'flag' => 1,
                                                     'wikiDataId' => 'Q842',
                                                 ),
-                                                166 => 
+                                                166 =>
                                                 array (
                                                     'id' => 167,
                                                     'name' => 'Pakistan',
@@ -4195,7 +4195,7 @@ class CountriesTableSeeder extends Seeder
                                                     'flag' => 1,
                                                     'wikiDataId' => 'Q843',
                                                 ),
-                                                167 => 
+                                                167 =>
                                                 array (
                                                     'id' => 168,
                                                     'name' => 'Palau',
@@ -4220,7 +4220,7 @@ class CountriesTableSeeder extends Seeder
                                                     'flag' => 1,
                                                     'wikiDataId' => 'Q695',
                                                 ),
-                                                168 => 
+                                                168 =>
                                                 array (
                                                     'id' => 169,
                                                     'name' => 'Palestinian Territory Occupied',
@@ -4245,7 +4245,7 @@ class CountriesTableSeeder extends Seeder
                                                     'flag' => 1,
                                                     'wikiDataId' => NULL,
                                                 ),
-                                                169 => 
+                                                169 =>
                                                 array (
                                                     'id' => 170,
                                                     'name' => 'Panama',
@@ -4270,7 +4270,7 @@ class CountriesTableSeeder extends Seeder
                                                         'flag' => 1,
                                                         'wikiDataId' => 'Q804',
                                                     ),
-                                                    170 => 
+                                                    170 =>
                                                     array (
                                                         'id' => 171,
                                                         'name' => 'Papua new Guinea',
@@ -4295,7 +4295,7 @@ class CountriesTableSeeder extends Seeder
                                                         'flag' => 1,
                                                         'wikiDataId' => 'Q691',
                                                     ),
-                                                    171 => 
+                                                    171 =>
                                                     array (
                                                         'id' => 172,
                                                         'name' => 'Paraguay',
@@ -4320,7 +4320,7 @@ class CountriesTableSeeder extends Seeder
                                                         'flag' => 1,
                                                         'wikiDataId' => 'Q733',
                                                     ),
-                                                    172 => 
+                                                    172 =>
                                                     array (
                                                         'id' => 173,
                                                         'name' => 'Peru',
@@ -4345,7 +4345,7 @@ class CountriesTableSeeder extends Seeder
                                                         'flag' => 1,
                                                         'wikiDataId' => 'Q419',
                                                     ),
-                                                    173 => 
+                                                    173 =>
                                                     array (
                                                         'id' => 174,
                                                         'name' => 'Philippines',
@@ -4370,7 +4370,7 @@ class CountriesTableSeeder extends Seeder
                                                         'flag' => 1,
                                                         'wikiDataId' => 'Q928',
                                                     ),
-                                                    174 => 
+                                                    174 =>
                                                     array (
                                                         'id' => 175,
                                                         'name' => 'Pitcairn Island',
@@ -4395,7 +4395,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => NULL,
                                                         ),
-                                                        175 => 
+                                                        175 =>
                                                         array (
                                                             'id' => 176,
                                                             'name' => 'Poland',
@@ -4420,7 +4420,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q36',
                                                         ),
-                                                        176 => 
+                                                        176 =>
                                                         array (
                                                             'id' => 177,
                                                             'name' => 'Portugal',
@@ -4445,7 +4445,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q45',
                                                         ),
-                                                        177 => 
+                                                        177 =>
                                                         array (
                                                             'id' => 178,
                                                             'name' => 'Puerto Rico',
@@ -4470,7 +4470,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => NULL,
                                                         ),
-                                                        178 => 
+                                                        178 =>
                                                         array (
                                                             'id' => 179,
                                                             'name' => 'Qatar',
@@ -4495,7 +4495,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q846',
                                                         ),
-                                                        179 => 
+                                                        179 =>
                                                         array (
                                                             'id' => 180,
                                                             'name' => 'Reunion',
@@ -4520,7 +4520,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => NULL,
                                                         ),
-                                                        180 => 
+                                                        180 =>
                                                         array (
                                                             'id' => 181,
                                                             'name' => 'Romania',
@@ -4545,7 +4545,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q218',
                                                         ),
-                                                        181 => 
+                                                        181 =>
                                                         array (
                                                             'id' => 182,
                                                             'name' => 'Russia',
@@ -4570,7 +4570,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q159',
                                                         ),
-                                                        182 => 
+                                                        182 =>
                                                         array (
                                                             'id' => 183,
                                                             'name' => 'Rwanda',
@@ -4595,7 +4595,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q1037',
                                                         ),
-                                                        183 => 
+                                                        183 =>
                                                         array (
                                                             'id' => 184,
                                                             'name' => 'Saint Helena',
@@ -4620,7 +4620,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => NULL,
                                                         ),
-                                                        184 => 
+                                                        184 =>
                                                         array (
                                                             'id' => 185,
                                                             'name' => 'Saint Kitts And Nevis',
@@ -4645,7 +4645,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q763',
                                                         ),
-                                                        185 => 
+                                                        185 =>
                                                         array (
                                                             'id' => 186,
                                                             'name' => 'Saint Lucia',
@@ -4670,7 +4670,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q760',
                                                         ),
-                                                        186 => 
+                                                        186 =>
                                                         array (
                                                             'id' => 187,
                                                             'name' => 'Saint Pierre and Miquelon',
@@ -4695,7 +4695,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => NULL,
                                                         ),
-                                                        187 => 
+                                                        187 =>
                                                         array (
                                                             'id' => 188,
                                                             'name' => 'Saint Vincent And The Grenadines',
@@ -4720,7 +4720,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q757',
                                                         ),
-                                                        188 => 
+                                                        188 =>
                                                         array (
                                                             'id' => 189,
                                                             'name' => 'Saint-Barthelemy',
@@ -4745,7 +4745,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => NULL,
                                                         ),
-                                                        189 => 
+                                                        189 =>
                                                         array (
                                                             'id' => 190,
                                                         'name' => 'Saint-Martin (French part)',
@@ -4770,7 +4770,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => NULL,
                                                         ),
-                                                        190 => 
+                                                        190 =>
                                                         array (
                                                             'id' => 191,
                                                             'name' => 'Samoa',
@@ -4795,7 +4795,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q683',
                                                         ),
-                                                        191 => 
+                                                        191 =>
                                                         array (
                                                             'id' => 192,
                                                             'name' => 'San Marino',
@@ -4820,7 +4820,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q238',
                                                         ),
-                                                        192 => 
+                                                        192 =>
                                                         array (
                                                             'id' => 193,
                                                             'name' => 'Sao Tome and Principe',
@@ -4845,7 +4845,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q1039',
                                                         ),
-                                                        193 => 
+                                                        193 =>
                                                         array (
                                                             'id' => 194,
                                                             'name' => 'Saudi Arabia',
@@ -4870,7 +4870,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q851',
                                                         ),
-                                                        194 => 
+                                                        194 =>
                                                         array (
                                                             'id' => 195,
                                                             'name' => 'Senegal',
@@ -4895,7 +4895,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q1041',
                                                         ),
-                                                        195 => 
+                                                        195 =>
                                                         array (
                                                             'id' => 196,
                                                             'name' => 'Serbia',
@@ -4920,7 +4920,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q403',
                                                         ),
-                                                        196 => 
+                                                        196 =>
                                                         array (
                                                             'id' => 197,
                                                             'name' => 'Seychelles',
@@ -4945,7 +4945,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q1042',
                                                         ),
-                                                        197 => 
+                                                        197 =>
                                                         array (
                                                             'id' => 198,
                                                             'name' => 'Sierra Leone',
@@ -4970,7 +4970,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q1044',
                                                         ),
-                                                        198 => 
+                                                        198 =>
                                                         array (
                                                             'id' => 199,
                                                             'name' => 'Singapore',
@@ -4995,7 +4995,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q334',
                                                         ),
-                                                        199 => 
+                                                        199 =>
                                                         array (
                                                             'id' => 200,
                                                             'name' => 'Slovakia',
@@ -5020,7 +5020,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q214',
                                                         ),
-                                                        200 => 
+                                                        200 =>
                                                         array (
                                                             'id' => 201,
                                                             'name' => 'Slovenia',
@@ -5045,7 +5045,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q215',
                                                         ),
-                                                        201 => 
+                                                        201 =>
                                                         array (
                                                             'id' => 202,
                                                             'name' => 'Solomon Islands',
@@ -5070,7 +5070,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q685',
                                                         ),
-                                                        202 => 
+                                                        202 =>
                                                         array (
                                                             'id' => 203,
                                                             'name' => 'Somalia',
@@ -5095,7 +5095,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q1045',
                                                         ),
-                                                        203 => 
+                                                        203 =>
                                                         array (
                                                             'id' => 204,
                                                             'name' => 'South Africa',
@@ -5120,7 +5120,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q258',
                                                         ),
-                                                        204 => 
+                                                        204 =>
                                                         array (
                                                             'id' => 205,
                                                             'name' => 'South Georgia',
@@ -5145,7 +5145,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => NULL,
                                                         ),
-                                                        205 => 
+                                                        205 =>
                                                         array (
                                                             'id' => 206,
                                                             'name' => 'South Sudan',
@@ -5170,7 +5170,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q958',
                                                         ),
-                                                        206 => 
+                                                        206 =>
                                                         array (
                                                             'id' => 207,
                                                             'name' => 'Spain',
@@ -5195,7 +5195,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q29',
                                                         ),
-                                                        207 => 
+                                                        207 =>
                                                         array (
                                                             'id' => 208,
                                                             'name' => 'Sri Lanka',
@@ -5220,7 +5220,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q854',
                                                         ),
-                                                        208 => 
+                                                        208 =>
                                                         array (
                                                             'id' => 209,
                                                             'name' => 'Sudan',
@@ -5245,7 +5245,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q1049',
                                                         ),
-                                                        209 => 
+                                                        209 =>
                                                         array (
                                                             'id' => 210,
                                                             'name' => 'Suriname',
@@ -5270,7 +5270,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q730',
                                                         ),
-                                                        210 => 
+                                                        210 =>
                                                         array (
                                                             'id' => 211,
                                                             'name' => 'Svalbard And Jan Mayen Islands',
@@ -5295,7 +5295,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => NULL,
                                                         ),
-                                                        211 => 
+                                                        211 =>
                                                         array (
                                                             'id' => 212,
                                                             'name' => 'Swaziland',
@@ -5320,7 +5320,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q1050',
                                                         ),
-                                                        212 => 
+                                                        212 =>
                                                         array (
                                                             'id' => 213,
                                                             'name' => 'Sweden',
@@ -5345,7 +5345,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q34',
                                                         ),
-                                                        213 => 
+                                                        213 =>
                                                         array (
                                                             'id' => 214,
                                                             'name' => 'Switzerland',
@@ -5370,7 +5370,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q39',
                                                         ),
-                                                        214 => 
+                                                        214 =>
                                                         array (
                                                             'id' => 215,
                                                             'name' => 'Syria',
@@ -5395,7 +5395,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q858',
                                                         ),
-                                                        215 => 
+                                                        215 =>
                                                         array (
                                                             'id' => 216,
                                                             'name' => 'Taiwan',
@@ -5420,7 +5420,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q865',
                                                         ),
-                                                        216 => 
+                                                        216 =>
                                                         array (
                                                             'id' => 217,
                                                             'name' => 'Tajikistan',
@@ -5445,7 +5445,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q863',
                                                         ),
-                                                        217 => 
+                                                        217 =>
                                                         array (
                                                             'id' => 218,
                                                             'name' => 'Tanzania',
@@ -5470,7 +5470,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q924',
                                                         ),
-                                                        218 => 
+                                                        218 =>
                                                         array (
                                                             'id' => 219,
                                                             'name' => 'Thailand',
@@ -5495,7 +5495,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q869',
                                                         ),
-                                                        219 => 
+                                                        219 =>
                                                         array (
                                                             'id' => 220,
                                                             'name' => 'Togo',
@@ -5520,7 +5520,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q945',
                                                         ),
-                                                        220 => 
+                                                        220 =>
                                                         array (
                                                             'id' => 221,
                                                             'name' => 'Tokelau',
@@ -5545,7 +5545,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => NULL,
                                                         ),
-                                                        221 => 
+                                                        221 =>
                                                         array (
                                                             'id' => 222,
                                                             'name' => 'Tonga',
@@ -5570,7 +5570,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q678',
                                                         ),
-                                                        222 => 
+                                                        222 =>
                                                         array (
                                                             'id' => 223,
                                                             'name' => 'Trinidad And Tobago',
@@ -5595,7 +5595,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q754',
                                                         ),
-                                                        223 => 
+                                                        223 =>
                                                         array (
                                                             'id' => 224,
                                                             'name' => 'Tunisia',
@@ -5620,7 +5620,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q948',
                                                         ),
-                                                        224 => 
+                                                        224 =>
                                                         array (
                                                             'id' => 225,
                                                             'name' => 'Turkey',
@@ -5645,7 +5645,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q43',
                                                         ),
-                                                        225 => 
+                                                        225 =>
                                                         array (
                                                             'id' => 226,
                                                             'name' => 'Turkmenistan',
@@ -5670,7 +5670,7 @@ class CountriesTableSeeder extends Seeder
                                                             'flag' => 1,
                                                             'wikiDataId' => 'Q874',
                                                         ),
-                                                        226 => 
+                                                        226 =>
                                                         array (
                                                             'id' => 227,
                                                             'name' => 'Turks And Caicos Islands',
@@ -5695,7 +5695,7 @@ class CountriesTableSeeder extends Seeder
                                                                 'flag' => 1,
                                                                 'wikiDataId' => NULL,
                                                             ),
-                                                            227 => 
+                                                            227 =>
                                                             array (
                                                                 'id' => 228,
                                                                 'name' => 'Tuvalu',
@@ -5720,7 +5720,7 @@ class CountriesTableSeeder extends Seeder
                                                                 'flag' => 1,
                                                                 'wikiDataId' => 'Q672',
                                                             ),
-                                                            228 => 
+                                                            228 =>
                                                             array (
                                                                 'id' => 229,
                                                                 'name' => 'Uganda',
@@ -5745,7 +5745,7 @@ class CountriesTableSeeder extends Seeder
                                                                 'flag' => 1,
                                                                 'wikiDataId' => 'Q1036',
                                                             ),
-                                                            229 => 
+                                                            229 =>
                                                             array (
                                                                 'id' => 230,
                                                                 'name' => 'Ukraine',
@@ -5770,7 +5770,7 @@ class CountriesTableSeeder extends Seeder
                                                                 'flag' => 1,
                                                                 'wikiDataId' => 'Q212',
                                                             ),
-                                                            230 => 
+                                                            230 =>
                                                             array (
                                                                 'id' => 231,
                                                                 'name' => 'United Arab Emirates',
@@ -5795,7 +5795,7 @@ class CountriesTableSeeder extends Seeder
                                                                 'flag' => 1,
                                                                 'wikiDataId' => 'Q878',
                                                             ),
-                                                            231 => 
+                                                            231 =>
                                                             array (
                                                                 'id' => 232,
                                                                 'name' => 'United Kingdom',
@@ -5820,7 +5820,7 @@ class CountriesTableSeeder extends Seeder
                                                                 'flag' => 1,
                                                                 'wikiDataId' => 'Q145',
                                                             ),
-                                                            232 => 
+                                                            232 =>
                                                             array (
                                                                 'id' => 233,
                                                                 'name' => 'United States',
@@ -5845,7 +5845,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'flag' => 1,
                                                                     'wikiDataId' => 'Q30',
                                                                 ),
-                                                                233 => 
+                                                                233 =>
                                                                 array (
                                                                     'id' => 234,
                                                                     'name' => 'United States Minor Outlying Islands',
@@ -5870,7 +5870,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'flag' => 1,
                                                                     'wikiDataId' => NULL,
                                                                 ),
-                                                                234 => 
+                                                                234 =>
                                                                 array (
                                                                     'id' => 235,
                                                                     'name' => 'Uruguay',
@@ -5895,7 +5895,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'flag' => 1,
                                                                     'wikiDataId' => 'Q77',
                                                                 ),
-                                                                235 => 
+                                                                235 =>
                                                                 array (
                                                                     'id' => 236,
                                                                     'name' => 'Uzbekistan',
@@ -5920,7 +5920,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'flag' => 1,
                                                                     'wikiDataId' => 'Q265',
                                                                 ),
-                                                                236 => 
+                                                                236 =>
                                                                 array (
                                                                     'id' => 237,
                                                                     'name' => 'Vanuatu',
@@ -5945,7 +5945,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'flag' => 1,
                                                                     'wikiDataId' => 'Q686',
                                                                 ),
-                                                                237 => 
+                                                                237 =>
                                                                 array (
                                                                     'id' => 238,
                                                                 'name' => 'Vatican City State (Holy See)',
@@ -5970,7 +5970,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'flag' => 1,
                                                                     'wikiDataId' => 'Q237',
                                                                 ),
-                                                                238 => 
+                                                                238 =>
                                                                 array (
                                                                     'id' => 239,
                                                                     'name' => 'Venezuela',
@@ -5995,7 +5995,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'flag' => 1,
                                                                     'wikiDataId' => 'Q717',
                                                                 ),
-                                                                239 => 
+                                                                239 =>
                                                                 array (
                                                                     'id' => 240,
                                                                     'name' => 'Vietnam',
@@ -6020,7 +6020,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'flag' => 1,
                                                                     'wikiDataId' => 'Q881',
                                                                 ),
-                                                                240 => 
+                                                                240 =>
                                                                 array (
                                                                     'id' => 241,
                                                                 'name' => 'Virgin Islands (British)',
@@ -6045,7 +6045,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'flag' => 1,
                                                                     'wikiDataId' => NULL,
                                                                 ),
-                                                                241 => 
+                                                                241 =>
                                                                 array (
                                                                     'id' => 242,
                                                                 'name' => 'Virgin Islands (US)',
@@ -6070,7 +6070,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'flag' => 1,
                                                                     'wikiDataId' => NULL,
                                                                 ),
-                                                                242 => 
+                                                                242 =>
                                                                 array (
                                                                     'id' => 243,
                                                                     'name' => 'Wallis And Futuna Islands',
@@ -6095,7 +6095,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'flag' => 1,
                                                                     'wikiDataId' => NULL,
                                                                 ),
-                                                                243 => 
+                                                                243 =>
                                                                 array (
                                                                     'id' => 244,
                                                                     'name' => 'Western Sahara',
@@ -6120,7 +6120,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'flag' => 1,
                                                                     'wikiDataId' => NULL,
                                                                 ),
-                                                                244 => 
+                                                                244 =>
                                                                 array (
                                                                     'id' => 245,
                                                                     'name' => 'Yemen',
@@ -6145,7 +6145,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'flag' => 1,
                                                                     'wikiDataId' => 'Q805',
                                                                 ),
-                                                                245 => 
+                                                                245 =>
                                                                 array (
                                                                     'id' => 246,
                                                                     'name' => 'Zambia',
@@ -6170,7 +6170,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'flag' => 1,
                                                                     'wikiDataId' => 'Q953',
                                                                 ),
-                                                                246 => 
+                                                                246 =>
                                                                 array (
                                                                     'id' => 247,
                                                                     'name' => 'Zimbabwe',
@@ -6195,7 +6195,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'flag' => 1,
                                                                     'wikiDataId' => 'Q954',
                                                                 ),
-                                                                247 => 
+                                                                247 =>
                                                                 array (
                                                                     'id' => 248,
                                                                     'name' => 'Kosovo',
@@ -6220,7 +6220,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'flag' => 1,
                                                                     'wikiDataId' => 'Q1246',
                                                                 ),
-                                                                248 => 
+                                                                248 =>
                                                                 array (
                                                                     'id' => 249,
                                                                     'name' => 'Curaçao',
@@ -6245,7 +6245,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'flag' => 1,
                                                                     'wikiDataId' => 'Q25279',
                                                                 ),
-                                                                249 => 
+                                                                249 =>
                                                                 array (
                                                                     'id' => 250,
                                                                 'name' => 'Sint Maarten (Dutch part)',
@@ -6271,7 +6271,7 @@ class CountriesTableSeeder extends Seeder
                                                                     'wikiDataId' => 'Q26273',
                                                                 ),
                                                             ));
-        
-        
+
+
     }
 }

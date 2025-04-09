@@ -10,7 +10,7 @@ class City extends Model
     use HasFactory;
 
     // Nom de la table associée (au cas où elle serait différente de la convention plurielle)
-    protected $table = 'cities';  // Assurez-vous que la table s'appelle bien 'cities'
+    protected $table = 'cities';  // Vérifie que la table s'appelle bien 'cities'
 
     // Clé primaire (si différente de 'id')
     // protected $primaryKey = 'id';
@@ -32,16 +32,21 @@ class City extends Model
      */
     public function country()
     {
-        // Relation inverse, une ville appartient à un pays
-        return $this->belongsTo(Country::class, 'country_id'); // On précise 'country_id' comme clé étrangère
+        // Une ville appartient à un pays
+        return $this->belongsTo(Country::class, 'country_id'); // 'country_id' est la clé étrangère dans la table 'cities'
     }
 
     /**
-     * Récupère les entreprises associées à cette ville.
+     * Récupère l'état (ou province) associé à cette ville.
      */
-    public function companies()
+    public function state()
     {
-        // Une ville peut avoir plusieurs entreprises
-        return $this->hasMany(Company::class);
+        // Une ville appartient à un état
+        return $this->belongsTo(State::class, 'state_id'); // 'state_id' est la clé étrangère dans la table 'cities'
     }
+
+    /**
+     * Récupère les entreprises associées à cette ville (si applicable).
+     */
+    
 }

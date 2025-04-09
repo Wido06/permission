@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-      
+
         $this->call([
             CountriesTableSeeder::class,
             StatesTableSeeder::class,
@@ -31,12 +31,12 @@ class DatabaseSeeder extends Seeder
         ]);
 
         // Création de 10 utilisateurs fictifs
-        User::factory(10)->create();
+        // User::factory(10)->create();
 
         // Création d'un utilisateur spécifique
-        User::factory()->create([
-            'name' => 'Utilisateur Test',
-            'email' => 'test@example.com',
-        ]);
+        // User::factory()->create([
+        //     'name' => 'Utilisateur Test',
+        //     'email' => 'test@example.com',
+        // ]);
     }
 }

@@ -63,20 +63,45 @@ class RoleController extends Controller
 
 
 
-//     public function store(Request $request)
-// {
-//     if (!$request->ajax()) {
-//         return response()->json(['success' => false, 'message' => 'Requête invalide'], 400);
-//     }
+    public function store(Request $request)
+    {
+        if (!$request->ajax()) {
+            return response()->json(['success' => false, 'toast_message' => 'Requête invalide'], 400);
+        }
 
-//     $request->validate(['name' => 'required|unique:role,name']);
+        dd($request->all());
+    
+        $validated = $request->validate([
+            'name' => 'required|unique:role,name',
+            'permission_id' => 'array', // optionnel, pour éviter les erreurs
+            'permission_id.*' => 'exists:permission,id' // chaque ID doit exister
+        ]);
+    
+        $role = RoleModel::create([
+            'name' => $request->name
+        ]);
+    
+        // Attacher les permissions AVANT le return
+        if ($request->has('permission_id')) {
+            $role->permissions()->sync($request->permission_id); // Nécessite une relation définie
+        }
+    
+        return response()->json([
+            'success' => true,
+            'role' => $role
+        ]);
 
-//     $role = RoleModel::create(['name' => $request->name]);
+        if ($request->has('permission_id')) {
+            $role->permissions()->sync($request->permission_id);
+        }
+return redirect('panel/role')->with('success', "Role successfully created");
 
-//     return response()->json([
-//         'success' => true,
-//         'role' => $role
-//     ]);
-// }
-
+       
+    }
+    
+    
 }
+        
+
+    
+

@@ -30,6 +30,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\PermissionModel;
 
 class RoleModel extends Model
 {
@@ -45,5 +46,11 @@ class RoleModel extends Model
     {
         return self::find($id);
     }
+
+    public function permission()
+{
+    return $this->belongsToMany(PermissionModel::class, 'role_permission', 'role_id', 'permission_id');
+}
+
 }
 

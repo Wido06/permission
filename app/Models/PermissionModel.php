@@ -46,6 +46,8 @@ class PermissionModel extends Model
     {
         return PermissionModel::where('groupby', '=', $groupby)->get();
     }
+
+   
 }
 
 

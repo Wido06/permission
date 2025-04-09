@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\City;
 use App\Models\Country;
 use App\Models\RoleModel;
+use App\Models\PermissionModel;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rules\Password;
@@ -17,6 +18,7 @@ class UserController extends Controller
     public function add()
 {
     $data['getRole'] = RoleModel :: getRecord();
+    $data['getPermission'] = PermissionModel :: getRecord();
     return view('panel.user.add', $data); // Assure-toi que la vue "add.blade.php" existe bien dans "resources/views/panel/user/"
 }
 

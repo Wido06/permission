@@ -94,6 +94,16 @@
 
 
 
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS avec Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
 </head>
 
 <body>
@@ -126,7 +136,7 @@
 
 
 
-    {{-- <div class="toast-container position-fixed bottom-0 end-0 p-3">
+     {{-- <div class="toast-container position-fixed bottom-0 end-0 p-3">
         <div id="liveToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="d-flex">
                 <div class="toast-body">
@@ -164,8 +174,22 @@
                 @endif
 
 
-            
 
+
+{{-- MODAL --}}
+
+<script>
+    function addRole() {
+        fetch("{{ url('panel.role.add') }}") // Remplace par ta route ou ton URL exacte
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById("roleModalContent").innerHTML = html;
+            })
+            .catch(error => {
+                console.error("Erreur lors du chargement de la page :", error);
+            });
+    }
+    </script>
 
 
 

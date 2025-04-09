@@ -30,9 +30,14 @@ class SelectCountryCity extends Component
                 return $city->name;
             })->toArray();
 
+
             // Si aucune ville n'est sélectionnée, choisir la première ville par défaut
             if (empty($this->city) && !empty($this->cities)) {
                 $this->city = $this->cities[0];
+
+            if (!$this->city && !empty($this->cities)) {
+                $this->city = $this->cities();
+
             }
         } else {
             // Réinitialiser si aucun pays n'est trouvé
@@ -41,11 +46,12 @@ class SelectCountryCity extends Component
         }
     }
 
-    public function render()
-{
-    return view('livewire.select-country-city', [
-        'cities' => $this->cities,
-    ]);
+                public function render()
+            {
+                return view('livewire.select-country-city', [
+                    'cities' => $this->cities,
+                ]);
 }
 
+}
 }

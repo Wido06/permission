@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rules\Password;
 
+
 class UserController extends Controller
 {
 
@@ -42,8 +43,8 @@ class UserController extends Controller
             ],
             'role_id' => 'required|integer',
             'country_id' => 'required|integer|exists:countries,id',
-            'city_id' => 'required|integer|exists:cities,id',
-            'sexe' => 'required|string|in:homme,femme',
+             'city_id' => 'required|integer|exists:cities,id',
+            'sexe' => 'required|string|in:Féminin,Masculin',
             'file' => 'nullable|mimes:png,jpg,jpeg,pdf|max:2048'
         ]);
 
@@ -52,15 +53,15 @@ class UserController extends Controller
         $user->email = trim($request->email);
         $user->password = Hash::make($request->password);
         $user->role_id = trim($request->role_id);
-        $user->country_id = trim($request->country_id);
-        $user->city_id = trim($request->city_id);
+        // $user->country_id = trim($request->country_id);
+        // $user->city_id = trim($request->city_id);
         $user->sexe = $request->sexe;
 
         // ✅ Gestion du fichier uploadé
         if ($request->hasFile('file')) {
             $file = $request->file('file');
             $filename = time() . '.' . $file->getClientOriginalExtension();
-            $path = $file->storeAs('uploads', $filename, 'public'); // Stockage sécurisé
+            $path = $file->storeAs('permission/uploads', $filename, 'public'); // Stockage sécurisé
             $user->file_path = $path;
         }
 
@@ -85,9 +86,9 @@ class UserController extends Controller
             'name' => 'required|string|max:255',
             'password' => 'nullable|min:12',
             'role_id' => 'required|integer',
-            'country_id' => 'required|integer|exists:countries,id',
-            'city_id' => 'required|integer|exists:cities,id',
-            'sexe' => 'required|string|in:homme,femme',
+             'country_id' => 'required|integer|exists:countries,id',
+             'city_id' => 'required|integer|exists:cities,id',
+           'sexe' => 'required|string|in:Féminin,Masculin',
             'file' => 'nullable|mimes:png,jpg,jpeg,pdf|max:2048'
         ]);
 
@@ -134,4 +135,6 @@ class UserController extends Controller
 
         return redirect('panel/user')->with('toast_message', "Utilisateur supprimé avec succès.");
     }
+
+
 }

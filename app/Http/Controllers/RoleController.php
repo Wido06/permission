@@ -62,7 +62,16 @@ class RoleController extends Controller
     }
 
 
+    public function store(Request $request)
+    {
+        // 🔐 Validation des données
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'permission_id' => 'nullable|array',
+            'permission_id.*' => 'integer|exists:permissions,id',
+        ]);
 
+<<<<<<< HEAD
     public function store(Request $request)
     {
         if (!$request->ajax()) {
@@ -95,13 +104,36 @@ class RoleController extends Controller
             $role->permissions()->sync($request->permission_id);
         }
 return redirect('panel/role')->with('success', "Role successfully created");
+=======
+        // 💾 Création du rôle
+        $save = new RoleModel;
+        $save->name = trim($request->name);
+        $save->save();
+
+        // 🔗 Association des permissions
+        if ($request->has('permission_id')) {
+            PermissionRoleModel::InsertUpdateRecord($request->permission_id, $save->id);
+        }
+
+        // ✅ Message de succès
+        return redirect()->back()->with('toast_message', "Rôle créé avec succès.");
+    }
+
+
+>>>>>>> 4a8b71e514c1e388d111208f89f20fc364ae98a3
 
        
     }
     
     
 }
+<<<<<<< HEAD
         
 
     
+=======
+
+
+
+>>>>>>> 4a8b71e514c1e388d111208f89f20fc364ae98a3
 
